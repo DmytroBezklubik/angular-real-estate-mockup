@@ -1,0 +1,50 @@
+<div class="save-search">
+	<div>
+		<div class="save-modal-header">
+			Save Your Search
+			<span class="close-btn" (click)="closePopup()">✕</span>
+		</div>
+		<div class="modal-body">
+			<p class="search-term-title">"Hounted house in derbyshire"<br/>Lodz, 0 km</p>
+			<div class="search-terms">
+				<p class="search-term">Price 900 - 1300 PLN, Studio rooms - 2,</p>
+				<p class="search-term">Additional: furnishings, elevator</p>
+				<p class="search-term">Near: stop, station</p>
+			</div>
+			<div class="noti-period">
+				<p class="search-terms">Notify me:</p>
+				<label class="period-item">
+					<input type="radio" checked="checked" name="period-type_option">
+					<span class="period-checkmark">immediately</span>
+				</label>
+				<label class="period-item">
+					<input type="radio" name="period-type_option">
+					<span class="period-checkmark">every day</span>
+				</label>
+				<label class="period-item">
+					<input type="radio" name="period-type_option">
+					<span class="period-checkmark">3 days</span>
+				</label>
+				<label class="period-item">
+					<input type="radio" name="period-type_option">
+					<span class="period-checkmark">7 days</span>
+				</label>
+				<label class="period-item">
+					<input type="radio" name="period-type_option">
+					<span class="period-checkmark">14 days</span>
+				</label>
+				<label class="period-item">
+					<input type="radio" name="period-type_option">
+					<span class="period-checkmark">30 days</span>
+				</label>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<label class="checkbox-container text-secondary mt-3 post-checkbod">email notifications
+				<input type="checkbox">
+				<span class="advanced-checkmark"></span>
+			</label>
+			<button class="save-btn" (click)="save()">save your search<img alt="columns" src="../../../../assets/images/empty-white.svg" class="img-fluid"></button>
+		</div>
+	</div>
+</div>

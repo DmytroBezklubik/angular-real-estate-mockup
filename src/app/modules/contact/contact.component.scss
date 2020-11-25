@@ -1,0 +1,31 @@
+
+#contact {
+    max-width: 800px;
+    margin: 30px auto;
+    form {
+        // border-top: 1px solid;
+        padding-top: 30px;
+    }
+    input {
+        height: 40px;
+    }
+    
+    app-text-editor {
+        height: 240px;
+        display: grid;
+        padding: 0 0 40px;
+        margin-bottom: 20px;
+        .ql-toolbar {
+            span {
+                height: 24px !important;
+            }
+        }
+    }
+    .submit-btn {
+        color: #fff;
+        background-color: #00ce86;
+        padding: 10px 110px;
+        margin: 0 auto 40px;
+        border-radius: 20px;
+    }
+}

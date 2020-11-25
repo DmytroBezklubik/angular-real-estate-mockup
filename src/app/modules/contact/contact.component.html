@@ -1,0 +1,21 @@
+<app-rheader></app-rheader>
+<section id="contact">
+	<form [formGroup]="myForm" (ngSubmit)="send()">
+		<div class="row">
+			<label class="col-md-12">Title: </label>
+			<input type="text" class="col-md-12">
+		</div>
+		<br/>
+		<!-- <div class="row">
+			<label class="col-md-3">Title of advert</label>
+			<input type="text" placeholder="type." class="col-md-7">
+		</div> -->
+		<div class="row">
+			<label class="col-md-12">Message: </label>
+			<app-text-editor  class="col-md-12" (contentChange)="onContentChange($event)"></app-text-editor>
+		</div>
+		<div class="row">
+					<button class="submit-btn" type="submit">SEND</button>
+		</div>
+	</form>
+</section>

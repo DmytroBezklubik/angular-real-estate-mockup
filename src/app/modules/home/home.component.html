@@ -1,0 +1,420 @@
+<app-header *ngIf="!isLogin"></app-header>
+<section id="header">
+	<div class="container-fluid no-gutters">
+		<div class="header--search">
+			<div class="d-flex align-items-center justify-content-center h-100">
+				<div>
+					<p class="szukam">Searching</p>
+				</div>
+				<div class="p-2 p-md-4 w-100 w-md-auto">
+					<select aria-label="test" class="SlectBox">
+						<option data-display="House">House</option>
+						<option value="1">Some option</option>
+						<option value="2">Another option</option>
+						<option value="3">A disabled option</option>
+						<option value="4">Potato</option>
+					</select>
+				</div>
+				<div>
+					<p class="szukam">to</p>
+				</div>
+				<div class="p-2 p-md-4 w-100 w-md-auto">
+					<select aria-label="">
+						<option data-display="Buy">Buy</option>
+						<option value="1">Some option</option>
+						<option value="2">Another option</option>
+						<option value="3">A disabled option</option>
+						<option value="4">Potato</option>
+					</select>
+				</div>
+				<div>
+					<p class="szukam">in</p>
+				</div>
+				<div class="p-2 p-md-4 w-100 w-md-auto">
+					<input id="search-city" placeholder="np. Warszawa" aria-label="" type="text"
+						   class="advanced-drop-input bg-transparent-border-white text-white border border-white d-block">
+					<img class="locate-me" (click) = "getAddress()" width="20px" src="../../../../assets/images/target.svg" alt="add-fav-icon">
+				</div>
+				<div class="p-2 p-md-4 w-100 w-md-auto d-none d-md-block">
+					<div class="search-advanced search-advanced-full">
+						<button routerLink="search-results">search</button>
+						<a class="advanced-slide">advanced</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="advanced-div">
+			<div class="container-fluid">
+				<div class="row row pt-5 p-2 p-md-4">
+					<div class="col-lg-2 col-md-3 col-6 pfrom">
+						<h6>Price</h6>
+						<input type="text" class="pfrom-input" [(ngModel)]='pfrom'>
+						<select class="pfrom-select" aria-label="">
+							<option value="">Min Price</option>
+							<option value="50000">£50,000</option>
+							<option value="60000">£60,000</option>
+							<option value="70000">£70,000</option>
+							<option value="80000">£80,000</option>
+							<option value="90000">£90,000</option>
+							<option value="100000">£100,000</option>
+							<option value="110000">£110,000</option>
+							<option value="120000">£120,000</option>
+							<option value="125000">£125,000</option>
+							<option value="130000">£130,000</option>
+							<option value="140000">£140,000</option>
+							<option value="150000">£150,000</option>
+							<option value="160000">£160,000</option>
+							<option value="170000">£170,000</option>
+							<option value="175000">£175,000</option>
+							<option value="180000">£180,000</option>
+							<option value="190000">£190,000</option>
+							<option value="200000">£200,000</option>
+							<option value="210000">£210,000</option>
+							<option value="220000">£220,000</option>
+							<option value="230000">£230,000</option>
+							<option value="240000">£240,000</option>
+							<option value="250000">£250,000</option>
+							<option value="260000">£260,000</option>
+							<option value="270000">£270,000</option>
+							<option value="280000">£280,000</option>
+							<option value="290000">£290,000</option>
+							<option value="300000">£300,000</option>
+							<option value="325000">£325,000</option>
+							<option value="350000">£350,000</option>
+							<option value="375000">£375,000</option>
+							<option value="400000">£400,000</option>
+							<option value="425000">£425,000</option>
+							<option value="450000">£450,000</option>
+							<option value="475000">£475,000</option>
+							<option value="500000">£500,000</option>
+							<option value="550000">£550,000</option>
+							<option value="600000">£600,000</option>
+							<option value="650000">£650,000</option>
+							<option value="700000">£700,000</option>
+							<option value="800000">£800,000</option>
+							<option value="900000">£900,000</option>
+							<option value="1000000">£1,000,000</option>
+							<option value="1250000">£1,250,000</option>
+							<option value="1500000">£1,500,000</option>
+							<option value="1750000">£1,750,000</option>
+							<option value="2000000">£2,000,000</option>
+							<option value="2500000">£2,500,000</option>
+							<option value="3000000">£3,000,000</option>
+							<option value="4000000">£4,000,000</option>
+							<option value="5000000">£5,000,000</option>
+							<option value="7500000">£7,500,000</option>
+							<option value="10000000">£10,000,000</option>
+							<option value="15000000">£15,000,000</option>
+							<option value="20000000">£20,000,000</option>
+						</select>
+					</div>
+
+					<div class="col-lg-2 col-md-3 col-6 pto">
+						<input type="text" class="pto-input" [(ngModel)]='pto'>
+						<select class="pto-select" aria-label="">
+							<option value="">Max Price</option>
+							<option value="50000">£50,000</option>
+							<option value="60000">£60,000</option>
+							<option value="70000">£70,000</option>
+							<option value="80000">£80,000</option>
+							<option value="90000">£90,000</option>
+							<option value="100000">£100,000</option>
+							<option value="110000">£110,000</option>
+							<option value="120000">£120,000</option>
+							<option value="125000">£125,000</option>
+							<option value="130000">£130,000</option>
+							<option value="140000">£140,000</option>
+							<option value="150000">£150,000</option>
+							<option value="160000">£160,000</option>
+							<option value="170000">£170,000</option>
+							<option value="175000">£175,000</option>
+							<option value="180000">£180,000</option>
+							<option value="190000">£190,000</option>
+							<option value="200000">£200,000</option>
+							<option value="210000">£210,000</option>
+							<option value="220000">£220,000</option>
+							<option value="230000">£230,000</option>
+							<option value="240000">£240,000</option>
+							<option value="250000">£250,000</option>
+							<option value="260000">£260,000</option>
+							<option value="270000">£270,000</option>
+							<option value="280000">£280,000</option>
+							<option value="290000">£290,000</option>
+							<option value="300000">£300,000</option>
+							<option value="325000">£325,000</option>
+							<option value="350000">£350,000</option>
+							<option value="375000">£375,000</option>
+							<option value="400000">£400,000</option>
+							<option value="425000">£425,000</option>
+							<option value="450000">£450,000</option>
+							<option value="475000">£475,000</option>
+							<option value="500000">£500,000</option>
+							<option value="550000">£550,000</option>
+							<option value="600000">£600,000</option>
+							<option value="650000">£650,000</option>
+							<option value="700000">£700,000</option>
+							<option value="800000">£800,000</option>
+							<option value="900000">£900,000</option>
+							<option value="1000000">£1,000,000</option>
+							<option value="1250000">£1,250,000</option>
+							<option value="1500000">£1,500,000</option>
+							<option value="1750000">£1,750,000</option>
+							<option value="2000000">£2,000,000</option>
+							<option value="2500000">£2,500,000</option>
+							<option value="3000000">£3,000,000</option>
+							<option value="4000000">£4,000,000</option>
+							<option value="5000000">£5,000,000</option>
+							<option value="7500000">£7,500,000</option>
+							<option value="10000000">£10,000,000</option>
+							<option value="15000000">£15,000,000</option>
+							<option value="20000000">£20,000,000</option>
+						</select>
+					</div>
+
+					<div class="col-lg-2 col-md-3 col-6 mt-5 m-md-0">
+						<h6>Meters</h6>
+						<select aria-label="">
+							<option data-display="Min Meters">Min Meters</option>
+							<option value="1">Some option</option>
+							<option value="2">Another option</option>
+							<option value="3">A disabled option</option>
+							<option value="4">Potato</option>
+						</select>
+					</div>
+
+					<div class="col-lg-2 col-md-3 col-6 mt-5 m-md-0">
+						<select aria-label="">
+							<option data-display="Max Meters">Max Meters</option>
+							<option value="1">Some option</option>
+							<option value="2">Another option</option>
+							<option value="3">A disabled option</option>
+							<option value="4">Potato</option>
+						</select>
+					</div>
+
+					<div class="col-lg-2 col-6 mt-4 m-lg-0">
+						<select aria-label="" multiple>
+							<option selected data-display="Meters to">Level</option>
+							<option value="1">Some option</option>
+							<option value="2">Another option</option>
+							<option value="3">A disabled option</option>
+							<option value="4">Potato</option>
+						</select>
+					</div>
+
+					<div class="col-lg-2 col-6 mt-4 m-lg-0">
+						<select aria-label="" multiple>
+							<option selected data-display="Room">Room</option>
+							<option value="1">Some option</option>
+							<option value="2">Another option</option>
+							<option value="3">A disabled option</option>
+							<option value="4">Potato</option>
+						</select>
+					</div>
+
+				</div>
+				<div class="row mt-lg-4 mt-md-2">
+					<div class="col-md-2 col-6 mt-md-0 mt-2">
+						<div class="advanced-div-checkbox">
+							<label class="checkbox-container">RATY
+								<input type="checkbox">
+								<span class="advanced-checkmark"></span>
+							</label>
+						</div>
+					</div>
+
+					<div class="col-md-2 col-6 mt-md-0 mt-2">
+						<div class="advanced-div-checkbox">
+							<label class="checkbox-container">Furnished
+								<input type="checkbox">
+								<span class="advanced-checkmark"></span>
+							</label>
+						</div>
+					</div>
+
+					<div class="col-md-2 col-6 mt-md-0 mt-2">
+						<div class="advanced-div-checkbox">
+							<label class="checkbox-container">Lift
+								<input type="checkbox">
+								<span class="advanced-checkmark"></span>
+							</label>
+						</div>
+					</div>
+
+					<div class="col-md-2 col-6 mt-md-0 mt-2">
+						<div class="advanced-div-checkbox">
+							<label class="checkbox-container">Parking
+								<input type="checkbox">
+								<span class="advanced-checkmark"></span>
+							</label>
+						</div>
+					</div>
+
+					<div class="col-md-2 col-6 mt-md-0 mt-2">
+						<div class="advanced-div-checkbox">
+							<label class="checkbox-container">Bills included
+								<input type="checkbox">
+								<span class="advanced-checkmark"></span>
+							</label>
+						</div>
+					</div>
+
+					<div class="col-md-2 col-6 mt-md-0 mt-2">
+						<div class="advanced-div-checkbox">
+							<label class="checkbox-container">Garage
+								<input type="checkbox">
+								<span class="advanced-checkmark"></span>
+							</label>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="search-advanced search-advanced-responsive-open p-2 p-md-4 d-block d-md-none">
+			<button>search</button>
+			<a class="advanced-slide">advanced</a>
+		</div>
+	</div>
+</section>
+<section id="featured">
+	<!-- <p class="content-featured">featured</p>
+	<ngx-slick-carousel
+	class="slide-nav-wrapper"
+	#slickNav
+	[config]="navSlideConfig"
+	>
+	  <ad-card  [isOkazja]="true" ngxSlickItem class="slide-nav featured-add" (mouseup)="onMouseUp($event)" (mousedown)="onMouseDown($event)" (mousemove)="onMouseMove($event)"></ad-card>
+	  <ad-card  [isOkazja]="true" ngxSlickItem class="slide-nav featured-add" (mouseup)="onMouseUp($event)" (mousedown)="onMouseDown($event)" (mousemove)="onMouseMove($event)"></ad-card>
+	  <ad-card  [isOkazja]="false" ngxSlickItem class="slide-nav featured-add" (mouseup)="onMouseUp($event)" (mousedown)="onMouseDown($event)" (mousemove)="onMouseMove($event)"></ad-card>
+	  <ad-card  [isOkazja]="false" ngxSlickItem class="slide-nav featured-add" (mouseup)="onMouseUp($event)" (mousedown)="onMouseDown($event)" (mousemove)="onMouseMove($event)"></ad-card>
+	  <ad-card  [isOkazja]="false" ngxSlickItem class="slide-nav featured-add" (mouseup)="onMouseUp($event)" (mousedown)="onMouseDown($event)" (mousemove)="onMouseMove($event)"></ad-card>
+	  <ad-card  [isOkazja]="true" ngxSlickItem class="slide-nav featured-add" (mouseup)="onMouseUp($event)" (mousedown)="onMouseDown($event)" (mousemove)="onMouseMove($event)"></ad-card>
+	  <ad-card  [isOkazja]="false" ngxSlickItem class="slide-nav featured-add" (mouseup)="onMouseUp($event)" (mousedown)="onMouseDown($event)" (mousemove)="onMouseMove($event)"></ad-card>
+	  <ad-card  [isOkazja]="false" ngxSlickItem class="slide-nav featured-add" (mouseup)="onMouseUp($event)" (mousedown)="onMouseDown($event)" (mousemove)="onMouseMove($event)"></ad-card>
+  </ngx-slick-carousel> -->
+  <div class="home-content">
+	<div class="container-fluid">
+		<div class="featured-body js-slideshow m-0">
+			<ad-card  [isOkazja]="true" class="featured-add"></ad-card>
+			<ad-card  [isOkazja]="true" class="featured-add"></ad-card>
+			<ad-card  [isOkazja]="false" class="featured-add"></ad-card>
+			<ad-card  [isOkazja]="false" class="featured-add"></ad-card>
+			<ad-card  [isOkazja]="false" class="featured-add"></ad-card>
+			<ad-card  [isOkazja]="true" class="featured-add"></ad-card>
+			<ad-card  [isOkazja]="false" class="featured-add"></ad-card>
+			<ad-card  [isOkazja]="false" class="featured-add"></ad-card>
+		</div>
+	</div>
+  </div>
+</section>
+<section id="promotion">
+	<div class="promote-it-toggle">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<label class="custom-radio-container">
+						<input type="radio" checked="checked" name="promote_option">
+						<span class="checkmark">
+							<h3 style="color: #807b77;">free</h3>
+							<p class="text-center">
+								0
+								<sup>zl</sup>
+							</p>
+							<span>na 7 dni</span>
+							<!--suppress HtmlUnknownTag -->
+							<h6 style="color: #807b77;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, totam?</h6>
+						</span>
+					</label>
+				</div>
+				<div class="col-md-3">
+					<label class="custom-radio-container">
+						<input type="radio" name="promote_option">
+						<span class="checkmark">
+							<h3 style="color: #807b77;">standard</h3>
+							<p class="text-center">
+								1
+								<sup>zl</sup>
+							</p>
+							<span>na 7 dni</span>
+							<!--suppress HtmlUnknownTag -->
+							<h6 style="color: #807b77;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, totam?</h6>
+						</span>
+					</label>
+				</div>
+				<div class="col-md-3">
+					<label class="custom-radio-container">
+						<input type="radio" name="promote_option">
+						<span class="checkmark">
+							<h3 style="color: #807b77;">silver</h3>
+							<p class="text-center">
+								5
+								<sup>zl</sup>
+							</p>
+							<span>na 7 dni</span>
+							<!--suppress HtmlUnknownTag -->
+							<h6 style="color: #807b77;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, totam?</h6>
+						</span>
+					</label>
+				</div>
+				<div class="col-md-3">
+					<label class="custom-radio-container">
+						<input type="radio" name="promote_option">
+						<span class="checkmark">
+							<h3 style="color: #807b77;">gold</h3>
+							<p class="text-center">
+								10
+								<sup>zl</sup>
+							</p>
+							<span>na 7 dni</span>
+							<!--suppress HtmlUnknownTag -->
+							<h6 style="color: #807b77;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, totam?</h6>
+						</span>
+					</label>
+				</div>
+			</div>
+			<div class="row justify-content-center mt-4">
+				<div class="col-12 col-md-4 col-lg-3">
+					<a href="/search-results" class="advanced-search-button">dodaj</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- <section class="my-5" id="banners">
+	<div class="container">
+		<div class="row justify-content-between">
+			<div class="col-md-5">
+				<div class="banner">
+					<h3>Lorem ipsum dolor sit amet, consectetur</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque libero nobis repellendus ut.
+						Autem ea itaque maiores mollitia quo.</p>
+					<img class="img-fluid" src="../../../../assets/images/forest.jpg" alt="banner">
+				</div>
+			</div>
+			<div class="col-md-5 mt-5 mt-md-0">
+				<div class="banner">
+					<h3>Lorem ipsum dolor sit amet, consectetur</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque libero nobis repellendus ut.
+						Autem ea itaque maiores mollitia quo.</p>
+					<img class="img-fluid" src="../../../../assets/images/forest.jpg" alt="banner">
+				</div>
+			</div>
+		</div>
+	</div>
+</section> -->
+<section id="blog-list">
+	<div class="container">
+		<div class="row main-blog">
+			<div class="blog-content">
+				<span class="">Luminous _______</span>
+				<h3>New Person,</h3>
+				<h3>Same Old Mistakes</h3>
+				<button class="read">READ</button>
+			</div>
+			<img class="blog-img" src="../../../assets/images/blog.png">
+		</div>
+	</div>
+</section>
+<cookie-policy></cookie-policy>
+<newsletter></newsletter>

@@ -1,0 +1,24 @@
+<!-- <div class="featured-add"> -->
+    <img *ngIf="getOkazja()" alt="offer" class="okazja" src="../../../../assets/images/offer.svg">
+    <a href="/ad-details">
+        <img alt="ad" class="img-fluid" src="../../../assets/images/1-false.png">
+        <p>This is a title here, it can be bit long even if is in to lines max 80 characters</p>
+        <div class="add-price">
+            <h6>1200</h6>
+            <h6>RENT</h6>
+            <h5>rachunki wliczone</h5>
+        </div>
+        <div class="add-location">
+            <h5>Warszawa, Mazowieckie</h5>
+            <form style="float: right;">
+                <label class="tooltip-grid">
+                    <input class="grid-checkbox" type="checkbox">
+                    <span class="grid-checkmark"></span>
+                    <span *ngIf="!getloginState()" class="tooltiptext-grid">Please <span data-toggle="modal"
+                                                                data-target="#login-modal"
+                                                                style="text-decoration: underline;">log in</span> to add to favorites</span>
+                </label>
+            </form>
+        </div>
+    </a>
+<!-- </div> -->

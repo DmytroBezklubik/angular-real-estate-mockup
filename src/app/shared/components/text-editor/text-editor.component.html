@@ -1,0 +1,9 @@
+<div class="editor">
+    <quill-editor [placeholder]="'Enter Description'"
+                  [theme]="'snow'"
+                  [modules]="quillConfig"
+                  (onSelectionChanged)="onSelectionChanged($event)"
+                  (onBlur)="onBluer($event)"
+                  (onContentChanged)="onHTMLContentChanged($event)"
+                  ></quill-editor>
+</div>

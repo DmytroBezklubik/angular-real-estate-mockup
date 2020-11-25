@@ -1,0 +1,105 @@
+<header id="nav-bar">
+	<nav class="navbar navbar-expand-lg navbar-dark navbar-z">
+		<a class="navbar-brand" href=""><img src="../../../assets/images/logo.svg" alt="logo"></a>
+		<div class="float-right d-block d-lg-none">
+			<button class="advanced-search mx-2" data-dismiss="modal" aria-label="Close">
+				<img src="../../../assets/images/search-icon.svg" alt="search-icon">
+			</button>
+			<button data-toggle="modal" data-dismiss="modal" aria-label="Close" data-target="#login-modal" class="mx-2">
+				<img src="../../../assets/images/add-to-fave.svg" alt="add-fav-icon">
+			</button>
+			<button *ngIf="!loginStatus" data-dismiss="modal" aria-label="Close" data-toggle="modal"
+				data-target="#login-modal-post-add" class="hamburger hamburger--slider mx-2">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</button>
+			<button *ngIf="loginStatus" data-dismiss="modal" aria-label="Close" data-toggle="modal"
+				data-target="#logged-in-menu" class="hamburger hamburger--slider mx-2">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</button>
+		</div>
+		<div class="collapse navbar-collapse d-none d-lg-block">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<form class="form-inline">
+						<button class="nav-search-icon m-2" type="button">
+							<img src="../../../assets/images/search-icon.svg" alt="search-icon">
+						</button>
+						<input class="form-control navbar-search" type="search" aria-label="Search">
+						<button type="button" class="advanced-search p-2">advanced</button>
+					</form>
+				</li>
+				<li class="nav-item">
+					<div *ngIf="!loginStatus" class="nav-link add-to-fave px-5">
+						<img src="../../../assets/images/add-to-fave.svg" alt="add-fav-icon">
+						<div class="logged-in text-center">
+							<p>You need to be logged in to add</p>
+							<button type="button" data-dismiss="modal" aria-label="Close" data-toggle="modal"
+								data-target="#login-modal">
+								log in
+							</button>
+						</div>
+					</div>
+					<div *ngIf="loginStatus" class="nav-link add-to-fave px-xl-5 px-lg-2">
+						<label class="tooltip-grid">
+							<input class="grid-checkbox" type="checkbox">
+							<span class="grid-checkmark"></span>
+						</label>
+					</div>
+				</li>
+				<li class="nav-item">
+					<div class="nav-link add-to-fave notification">
+						<a href="#">
+							<img width="20px" src="../../../assets/images/bell.svg" alt="add-fav-icon">
+							<span *ngIf="getAlarmCount() != 0"
+								[ngClass]="getBadgeClassName">{{ getAlarmCount() }}</span>
+							<!-- <span class="badge badge-full">&nbsp;</span> -->
+						</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<div *ngIf="!loginStatus" class="add-to-fave logged-in-dropdown logged-out">
+						<a class="nav-link" href="#">Login</a>
+						<div class="logged-in">
+							<button type="button" class="login-button-drop" data-toggle="modal"
+								data-target="#login-modal">
+								log in
+							</button>
+							<a href="#" data-dismiss="modal" aria-label="Close" data-toggle="modal"
+								data-target="#register-modal">REGISTER</a>
+						</div>
+					</div>
+					<div *ngIf="loginStatus" class="add-to-fave logged-in-dropdown">
+						<a class="nav-link" href="profile">
+							<img src="../../../assets/images/person.png" alt="person" class=""> My account
+						</a>
+						<div class="logged-in">
+							<a href="settings">MY ACCOUNT</a>
+							<a href="my-adverts">MY ADVERTS</a>
+							<a href="favorites">FAVORITES</a>
+							<a href="#">POST NEW ADD</a>
+							<button type="button" class="login-button-drop bg-dark text-white border-0"
+							        data-toggle="modal"
+							        data-target="#login-modal">
+								log out
+							</button>
+						</div>
+					</div>
+				</li>
+				<li class="nav-item px-5">
+					<div class="wrap-pulse">
+						<div class="bg-post-add"></div>
+						<button class="nav-link post-ad-navbar pulse-post-add" routerLink="/post">POST AD</button>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</header>
+<advanced-search></advanced-search>
+<login (success)="success()"></login>
+<register (success)="success()"></register>
+<forgot-pwd></forgot-pwd>

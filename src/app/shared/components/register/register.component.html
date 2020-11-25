@@ -1,0 +1,61 @@
+<!-- REGISTER MODAL -->
+<section id="register-modal-section">
+	<div class="modal fade" id="register-modal" tabindex="-1" role="dialog"
+	     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-body py-3">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<img alt="modal-close-icon" src="../../../../assets/images/close.svg">
+					</button>
+					<form action="">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-12">
+									<p class="text-center">Register</p>
+								</div>
+								<div class="col-12">
+									<label class="d-block" for="register-modal-section">
+										<input placeholder="Company or name" type="text" class="modal-input-text">
+										<input placeholder="Email" type="text" class="modal-input-text">
+										<input placeholder="Password" type="password" class="modal-input-text">
+										<input placeholder="Repeat password" type="password" class="modal-input-text">
+										<input placeholder="Captcha" type="text" class="modal-input-text mt-4">
+
+										<label class="checkbox-container text-dark pl-4" style="font-size: .6rem;">Zgadzam
+											się na otrzymywanie informacji handlowych i
+											marketingowych, zarówno w imieniu własnym jak i na zlecenie innych osób,
+											informacji
+											handlowych
+											drogą elektroniczną wysyłanych przez KiwiDom.pl
+											<input type="checkbox">
+											<span class="advanced-checkmark" style="left: 0;"></span>
+										</label>
+
+										<label class="checkbox-container text-dark pl-4" style="font-size: .6rem;">Akceptuje
+											regulamin i politykę prywatności serwisu
+											<input type="checkbox">
+											<span class="advanced-checkmark" style="left: 0;"></span>
+										</label>
+
+										<button class="advanced-search-button my-3" data-dismiss="modal" aria-label="Close" (click)="register($event)" type="button">register</button>
+
+										<button class="advanced-search-button bg-white text-green my-3 d-block d-md-none"
+										        type="button" data-dismiss="modal" aria-label="Close">
+											cancel
+										</button>
+
+										<a class="modal-link my-3 mb-5" href="#" data-dismiss="modal" aria-label="Close"
+										   data-toggle="modal" data-target="#login-modal">
+											Got an account? <span style="font-family: 'HKGrotesk-Medium', sans-serif;">Log in now</span>
+										</a>
+									</label>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

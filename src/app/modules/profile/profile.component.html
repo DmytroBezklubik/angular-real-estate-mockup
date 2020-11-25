@@ -1,0 +1,78 @@
+<app-rheader></app-rheader>
+<!-- PROFILE PAGE INFO -->
+<div id="profile-page-info">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-7">
+				<div class="row">
+					<div class="col-lg-2 mt-3 m-lg-0">
+						<div class="profile-page-pic">
+							<img alt="person" class="img-fluid" src="../../../assets/images/person.png">
+						</div>
+					</div>
+					<div class="col-lg-10">
+						<div class="profile-info">
+							<p class="mb-1">Registered from <span class="pv-info">3-07-2013</span>no logs <span class="pv-info">08-03-2019</span>no adverts <span class="pv-info">17</span>no logs <span class="pv-info">15</span></p>
+							<!-- <p>no logs <span>08-03-2019</span></p>
+							<p>no adverts <span>17</span></p>
+							<p>no logs <span>15</span></p> -->
+							<h2>Some Company Name</h2>
+							<h3>ul. Kościuszki 1, Warszawa, Mazowieckie</h3>
+							<div class="buttons">
+								<a *ngIf="isShowNumber" href="tel:555-555-5555" class="advanced-search-button bg-white text-green d-inline-block">
+									555-555-5555
+								</a>
+								<!-- <a href="mailto:webmaster@example.com" class="advanced-search-button bg-white text-green d-inline-block">show email</a> -->
+								<button *ngIf="!isShowNumber" class="advanced-search-button bg-white text-green d-inline-block" (click)="showNumber()">show number</button>
+								<button class="advanced-search-button d-inline-block" routerLink="/contact">send message</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- FEATURED -->
+<section id="featured">
+	<div class="home-content">
+		<div class="container-fluid">
+			<div class="featured-body js-slideshow m-0">
+				<ad-card  [isOkazja]="true" class="featured-add"></ad-card>
+				<ad-card  [isOkazja]="true" class="featured-add"></ad-card>
+				<ad-card  [isOkazja]="false" class="featured-add"></ad-card>
+				<ad-card  [isOkazja]="false" class="featured-add"></ad-card>
+				<ad-card  [isOkazja]="false" class="featured-add"></ad-card>
+				<ad-card  [isOkazja]="true" class="featured-add"></ad-card>
+				<ad-card  [isOkazja]="false" class="featured-add"></ad-card>
+				<ad-card  [isOkazja]="false" class="featured-add"></ad-card>
+			</div>
+		</div>
+	  </div>
+</section>
+
+<!-- PROFILE ADDS -->
+<div id="profile-adds">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-sm-6 col-12">
+				<div class="featured-add grid-off-slider">
+					<ad-card [loginState]="true"  [isOkazja]="true"></ad-card>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-sm-6 col-12">
+				<div class="featured-add grid-off-slider">
+					<ad-card [loginState]="true"  [isOkazja]="true"></ad-card>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-sm-6 col-12">
+				<div class="featured-add grid-off-slider">
+					<ad-card [loginState]="true"  [isOkazja]="false"></ad-card>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

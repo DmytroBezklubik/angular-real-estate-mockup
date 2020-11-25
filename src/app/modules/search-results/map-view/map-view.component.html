@@ -1,0 +1,292 @@
+<!-- <app-rheader></app-rheader> -->
+<section id="mapview-header">
+	<div class="container-fluid no-gutters">
+		<!-- <div class="header--search">
+			<div class="d-flex align-items-center justify-content-center h-100">
+				<div>
+					<p class="szukam">Searching</p>
+				</div>
+				<div class="p-2 p-md-4 w-100 w-md-auto">
+					<select aria-label="test" class="SlectBox">
+						<option data-display="House">House</option>
+						<option value="1">Some option</option>
+						<option value="2">Another option</option>
+						<option value="3">A disabled option</option>
+						<option value="4">Potato</option>
+					</select>
+				</div>
+				<div>
+					<p class="szukam">to</p>
+				</div>
+				<div class="p-2 p-md-4 w-100 w-md-auto">
+					<select aria-label="">
+						<option data-display="Buy">Buy</option>
+						<option value="1">Some option</option>
+						<option value="2">Another option</option>
+						<option value="3">A disabled option</option>
+						<option value="4">Potato</option>
+					</select>
+				</div>
+				<div>
+					<p class="szukam">in</p>
+				</div>
+				<div class="p-2 p-md-4 w-100 w-md-auto">
+					<input id="search-city" placeholder="np. Warszawa" aria-label="" type="text"
+						   class="advanced-drop-input bg-transparent-border-white text-white border border-white d-block">
+					<img class="locate-me" (click) = "getAddress()" width="20px" src="../../../../../assets/images/target.svg" alt="add-fav-icon">
+				</div>
+				<div class="p-2 p-md-4 w-100 w-md-auto d-none d-md-block">
+					<div class="search-advanced search-advanced-full">
+						<button>search</button>
+						<a class="advanced-slide">advanced</a>
+					</div>
+				</div>
+			</div>
+		</div> -->
+		<div class="advanced-div">
+			<div class="container-fluid">
+				<div class="row row pt-5 p-2 p-md-4">
+					<div class="mapview-logo"><img class="calendar-icon" src="../../../../assets/images/map.svg" alt="search-icon"></div>
+					<div class="col-lg-2 distance"><input type="text" placeholder="distance"><span>0 km</span></div>
+					<div class="col-lg-2 col-md-3 col-6">
+						<h6>Price</h6>
+						<select aria-label="">
+							<option value="">Min Price</option>
+							<option value="50000">£50,000</option>
+							<option value="60000">£60,000</option>
+							<option value="70000">£70,000</option>
+							<option value="80000">£80,000</option>
+							<option value="90000">£90,000</option>
+							<option value="100000">£100,000</option>
+							<option value="110000">£110,000</option>
+							<option value="120000">£120,000</option>
+							<option value="125000">£125,000</option>
+							<option value="130000">£130,000</option>
+							<option value="140000">£140,000</option>
+							<option value="150000">£150,000</option>
+							<option value="160000">£160,000</option>
+							<option value="170000">£170,000</option>
+							<option value="175000">£175,000</option>
+							<option value="180000">£180,000</option>
+							<option value="190000">£190,000</option>
+							<option value="200000">£200,000</option>
+							<option value="210000">£210,000</option>
+							<option value="220000">£220,000</option>
+							<option value="230000">£230,000</option>
+							<option value="240000">£240,000</option>
+							<option value="250000">£250,000</option>
+							<option value="260000">£260,000</option>
+							<option value="270000">£270,000</option>
+							<option value="280000">£280,000</option>
+							<option value="290000">£290,000</option>
+							<option value="300000">£300,000</option>
+							<option value="325000">£325,000</option>
+							<option value="350000">£350,000</option>
+							<option value="375000">£375,000</option>
+							<option value="400000">£400,000</option>
+							<option value="425000">£425,000</option>
+							<option value="450000">£450,000</option>
+							<option value="475000">£475,000</option>
+							<option value="500000">£500,000</option>
+							<option value="550000">£550,000</option>
+							<option value="600000">£600,000</option>
+							<option value="650000">£650,000</option>
+							<option value="700000">£700,000</option>
+							<option value="800000">£800,000</option>
+							<option value="900000">£900,000</option>
+							<option value="1000000">£1,000,000</option>
+							<option value="1250000">£1,250,000</option>
+							<option value="1500000">£1,500,000</option>
+							<option value="1750000">£1,750,000</option>
+							<option value="2000000">£2,000,000</option>
+							<option value="2500000">£2,500,000</option>
+							<option value="3000000">£3,000,000</option>
+							<option value="4000000">£4,000,000</option>
+							<option value="5000000">£5,000,000</option>
+							<option value="7500000">£7,500,000</option>
+							<option value="10000000">£10,000,000</option>
+							<option value="15000000">£15,000,000</option>
+							<option value="20000000">£20,000,000</option>
+						</select>
+					</div>
+
+					<div class="col-lg-2 col-md-3 col-6">
+						<select aria-label="">
+							<option value="">Max Price</option>
+							<option value="50000">£50,000</option>
+							<option value="60000">£60,000</option>
+							<option value="70000">£70,000</option>
+							<option value="80000">£80,000</option>
+							<option value="90000">£90,000</option>
+							<option value="100000">£100,000</option>
+							<option value="110000">£110,000</option>
+							<option value="120000">£120,000</option>
+							<option value="125000">£125,000</option>
+							<option value="130000">£130,000</option>
+							<option value="140000">£140,000</option>
+							<option value="150000">£150,000</option>
+							<option value="160000">£160,000</option>
+							<option value="170000">£170,000</option>
+							<option value="175000">£175,000</option>
+							<option value="180000">£180,000</option>
+							<option value="190000">£190,000</option>
+							<option value="200000">£200,000</option>
+							<option value="210000">£210,000</option>
+							<option value="220000">£220,000</option>
+							<option value="230000">£230,000</option>
+							<option value="240000">£240,000</option>
+							<option value="250000">£250,000</option>
+							<option value="260000">£260,000</option>
+							<option value="270000">£270,000</option>
+							<option value="280000">£280,000</option>
+							<option value="290000">£290,000</option>
+							<option value="300000">£300,000</option>
+							<option value="325000">£325,000</option>
+							<option value="350000">£350,000</option>
+							<option value="375000">£375,000</option>
+							<option value="400000">£400,000</option>
+							<option value="425000">£425,000</option>
+							<option value="450000">£450,000</option>
+							<option value="475000">£475,000</option>
+							<option value="500000">£500,000</option>
+							<option value="550000">£550,000</option>
+							<option value="600000">£600,000</option>
+							<option value="650000">£650,000</option>
+							<option value="700000">£700,000</option>
+							<option value="800000">£800,000</option>
+							<option value="900000">£900,000</option>
+							<option value="1000000">£1,000,000</option>
+							<option value="1250000">£1,250,000</option>
+							<option value="1500000">£1,500,000</option>
+							<option value="1750000">£1,750,000</option>
+							<option value="2000000">£2,000,000</option>
+							<option value="2500000">£2,500,000</option>
+							<option value="3000000">£3,000,000</option>
+							<option value="4000000">£4,000,000</option>
+							<option value="5000000">£5,000,000</option>
+							<option value="7500000">£7,500,000</option>
+							<option value="10000000">£10,000,000</option>
+							<option value="15000000">£15,000,000</option>
+							<option value="20000000">£20,000,000</option>
+						</select>
+					</div>
+
+					<div class="col-lg-2 col-md-3 col-6 mt-5 m-md-0">
+						<h6>Meters</h6>
+						<select aria-label="">
+							<option data-display="Min Meters">Min Meters</option>
+							<option value="1">Some option</option>
+							<option value="2">Another option</option>
+							<option value="3">A disabled option</option>
+							<option value="4">Potato</option>
+						</select>
+					</div>
+
+					<div class="col-lg-2 col-md-3 col-6 mt-5 m-md-0">
+						<select aria-label="">
+							<option data-display="Max Meters">Max Meters</option>
+							<option value="1">Some option</option>
+							<option value="2">Another option</option>
+							<option value="3">A disabled option</option>
+							<option value="4">Potato</option>
+						</select>
+					</div>
+
+					<div class="col-lg-2 col-6 mt-4 m-lg-0">
+						<select aria-label="" multiple>
+							<option selected data-display="Meters to">Level</option>
+							<option value="1">Some option</option>
+							<option value="2">Another option</option>
+							<option value="3">A disabled option</option>
+							<option value="4">Potato</option>
+						</select>
+					</div>
+
+					<div class="col-lg-2 col-6 mt-4 m-lg-0">
+						<select aria-label="" multiple>
+							<option selected data-display="Room">Room</option>
+							<option value="1">Some option</option>
+							<option value="2">Another option</option>
+							<option value="3">A disabled option</option>
+							<option value="4">Potato</option>
+						</select>
+					</div>
+					<!-- <div class="col-md-1">Search</div> -->
+					<button class="mapview-search-btn">Search</button>
+				</div>
+				<!-- <div class="row mt-lg-4 mt-md-2">
+					<div class="col-md-2 col-6 mt-md-0 mt-2">
+						<div class="advanced-div-checkbox">
+							<label class="checkbox-container">RATY
+								<input type="checkbox">
+								<span class="advanced-checkmark"></span>
+							</label>
+						</div>
+					</div>
+
+					<div class="col-md-2 col-6 mt-md-0 mt-2">
+						<div class="advanced-div-checkbox">
+							<label class="checkbox-container">Furnished
+								<input type="checkbox">
+								<span class="advanced-checkmark"></span>
+							</label>
+						</div>
+					</div>
+
+					<div class="col-md-2 col-6 mt-md-0 mt-2">
+						<div class="advanced-div-checkbox">
+							<label class="checkbox-container">Lift
+								<input type="checkbox">
+								<span class="advanced-checkmark"></span>
+							</label>
+						</div>
+					</div>
+
+					<div class="col-md-2 col-6 mt-md-0 mt-2">
+						<div class="advanced-div-checkbox">
+							<label class="checkbox-container">Parking
+								<input type="checkbox">
+								<span class="advanced-checkmark"></span>
+							</label>
+						</div>
+					</div>
+
+					<div class="col-md-2 col-6 mt-md-0 mt-2">
+						<div class="advanced-div-checkbox">
+							<label class="checkbox-container">Bills included
+								<input type="checkbox">
+								<span class="advanced-checkmark"></span>
+							</label>
+						</div>
+					</div>
+
+					<div class="col-md-2 col-6 mt-md-0 mt-2">
+						<div class="advanced-div-checkbox">
+							<label class="checkbox-container">Garage
+								<input type="checkbox">
+								<span class="advanced-checkmark"></span>
+							</label>
+						</div>
+					</div>
+
+				</div> -->
+			</div>
+		</div>
+		<div class="map">
+			<div class="btns-group">
+				<div class="save-search-button">
+					<button class="mx-lg-5 mx-2" (click)="saveSearch($event)">Save search<img alt="columns" src="../../../assets/images/empty-white.svg" class="img-fluid"></button>
+				</div>
+				<div class="map-button">
+					<button (click)="closeMap()" class="mx-lg-5 mx-2">Exit map view<img alt="columns" src="../../../assets/images/map.svg" class="img-fluid"></button>
+				</div>
+			</div>
+			<div class="sidebar"></div>
+			<iframe class="desktop-map"
+				src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d620340.4285124696!2d19.078747192884798!3d52.60206893310197!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ssr!2srs!4v1568644384820!5m2!1ssr!2srs"
+				width="100%" height="600" style="border:0;" allowfullscreen="">
+			</iframe>
+		</div>
+	</div>
+</section>
+<save-search-modal *ngIf="isSaveSearch" (saved)="closePopup()" (close)="closePopup()"></save-search-modal>

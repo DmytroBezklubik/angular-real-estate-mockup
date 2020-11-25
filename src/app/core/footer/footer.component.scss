@@ -1,0 +1,79 @@
+/* FOOTER */
+
+#footer {
+  background-color: #fafafa;
+}
+
+#footer .footer-logo-h5 {
+  font-size: .9rem;
+  letter-spacing: .02rem;
+  color: #041e15;
+  font-family: 'HKGrotesk-Medium', sans-serif;
+  padding-top: 1.25rem;
+}
+
+#footer .footer-newsletter h4 {
+  font-size: 0.9rem;
+  letter-spacing: .02rem;
+  color: #041e15;
+  font-family: 'HKGrotesk-Medium', sans-serif;
+  padding-top: 1.25rem;
+}
+
+#footer .footer-newsletter p {
+  font-size: .75rem;
+  letter-spacing: .02rem;
+  color: #041e15;
+}
+
+.footer-newsletter .footer-newsletter-div input {
+  width: 12rem;
+  height: 2.75rem;
+  border-radius: .25rem 0 0 .25rem;
+  border: solid 1px #2b303c;
+  opacity: 0.84;
+  font-size: .75rem;
+  letter-spacing: .01rem;
+  color: #041e15;
+  font-family: 'HKGrotesk-Light', sans-serif;
+  padding: .2rem;
+}
+
+.footer-newsletter .footer-newsletter-div input:focus {
+  outline: none;
+}
+
+.footer-newsletter .footer-newsletter-div button {
+  width: 7.7rem;
+  height: 2.75rem;
+  border-radius: 0 .25rem .25rem 0;
+  background-color: #0c9162;
+  font-size: .55rem;
+  letter-spacing: .01rem;
+  text-align: center;
+  color: #ffffff;
+  margin-left: -.25rem;
+  padding-top: .12rem;
+  transition: box-shadow .2s linear;
+}
+
+.footer-newsletter .footer-newsletter-div button:hover {
+  box-shadow: 0 0 .9rem 0 rgba(0, 0, 0, 0.75);
+}
+
+#footer .footer-links ul {
+  list-style: none;
+  padding-top: 1.25rem;
+}
+
+#footer .footer-links ul a {
+  font-size: .75rem;
+  line-height: 1.6;
+  letter-spacing: .01rem;
+  color: #041e15;
+  font-family: 'HKGrotesk-Light', sans-serif;
+}
+
+#footer .footer-links ul a:hover {
+  text-decoration: underline;
+}

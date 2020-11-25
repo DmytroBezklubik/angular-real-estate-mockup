@@ -1,0 +1,23 @@
+.ada-image-wrapper {
+    width: 100%;
+    height: 100%;
+  
+    alt {
+      display: none;
+    }
+  
+    longdesc {
+      display: none;
+    }
+  
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+  
+      &.contain {
+        object-fit: contain;
+      }
+    }
+  }

@@ -1,0 +1,229 @@
+/* HEADER */
+@import "../../../assets/css/sumoselect.css";
+#header {
+  height: 30rem;
+  background-image: url(../../../assets/images/header-background.png);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  padding: 7rem 1rem 11rem 1rem;
+  margin-top: -4rem;
+  .header--search {
+    width: 85%;
+    height: 10rem;
+    margin: 0 auto;
+    background-color: rgba(4, 30, 21, .8);
+  }
+  .szukam {
+    letter-spacing: .05rem;
+    color: #ffffff;
+    margin: 0;
+  }
+  .search-advanced-responsive-open {
+    background-color: rgba(4, 30, 21, .8);
+    position: relative;
+    z-index: 1;
+    width: 100%;
+  }
+  .SumoSelect {
+    width: 15vw;
+  }
+  .advanced-div .SumoSelect {
+    width: 100%;
+  }
+
+  .SumoSelect > .CaptionCont {
+    width: auto;
+    border-radius: 0;
+    background-color: transparent;
+    border: solid .04rem #ffffff;
+    color: #fff;
+    margin: 0 !important;
+    span {
+      color: transparent !important;
+    }
+  }
+  .SumoSelect > .optWrapper {
+    background-color: #041e15;
+    border: solid .04rem #ffffff;
+  }
+  .SumoSelect > .optWrapper > .options li.opt {
+    border-bottom: .04rem solid #ffffff;
+  }
+  .SumoSelect > .optWrapper > .options li.opt:hover label {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .search-advanced button {
+    width: 9vw;
+    height: 2.7rem;
+    border: solid .03rem #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: #ffffff;
+    /*noinspection CssReplaceWithShorthandSafely*/
+    margin: 0 auto;
+    display: block;
+    text-transform: uppercase;
+    /*noinspection CssReplaceWithShorthandSafely*/
+    margin-top: 2.4rem;
+  }
+  .search-advanced .advanced-slide {
+    text-align: center;
+    display: block;
+    font-size: .9rem;
+    letter-spacing: .06rem;
+    color: #ffffff;
+    padding-top: .9rem;
+  }
+  .search-advanced .advanced-slide:hover {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .advanced-div {
+    height: 11.25rem;
+    background-color: rgba(4, 30, 21, .8);
+    width: 85%;
+    margin: 0 auto;
+    display: none;
+    .pfrom, .pto {
+      .SumoSelect > .CaptionCont {
+        span {
+          color: transparent !important;
+        }
+      }
+    }
+    .pfrom-input, .pto-input {
+      position: absolute;
+      height: 40px;
+      background-color: transparent;
+      border: none;
+      color: #fff;
+      z-index: 2;
+      padding-left: 10px;
+    }
+    .pto-input {
+      position: absolute;
+      height: 40px;
+      background-color: transparent;
+      border: none;
+      color: #fff;
+    }
+  }
+  .advanced-div .nice-select .list {
+    height: 15rem;
+  }
+  .advanced-div h6 {
+    margin-top: -1.67rem;
+    color: #fff;
+  }
+  /* CUSTOM CHECKBOX */
+  .advanced-div .advanced-div-checkbox {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.locate-me {
+  position: absolute;
+  margin-top: -30px;
+  margin-left: 160px;  
+}
+
+.w-md-auto {
+  width: auto !important;
+}
+
+.checkbox-container {
+  font-size: .8rem;
+  letter-spacing: .07rem;
+  color: #ffffff;
+  font-family: 'HKGrotesk-Medium', sans-serif;
+  display: block;
+  position: relative;
+  padding-left: 2.2rem;
+  margin-bottom: .75rem;
+  margin-top: .6rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0 !important;
+    width: 0 !important;
+  }
+  .advanced-checkmark {
+    position: absolute;
+    top: 0;
+    left: .6rem;
+    height: 1.25rem;
+    width: 1.25rem;
+    background-color: #eee;
+  }
+  .advanced-checkmark::after {
+    left: .5rem;
+    top: .25rem;
+    width: .3rem;
+    height: .6rem;
+    border: solid white;
+    border-width: 0 .2rem .2rem 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+}
+
+.advanced-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container input:checked ~ .advanced-checkmark:after {
+  display: block;
+}
+
+.checkbox-container input:checked ~ .advanced-checkmark {
+  background-color: #00ce86;
+}
+
+#featured {
+  .slide-nav-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    .slick-prev, .slick-next {
+      left: 45px !important;
+      z-index: 1;
+    }
+  }
+}
+
+#blog-list {
+  background-color: #f1f1f1;
+  .main-blog {
+    padding: 40px 100px 60px;
+    .blog-content {
+      position: absolute;
+      display: inline-block;
+      padding-top: 50px;
+      button {
+        border: 1px solid;
+        padding: 4px 24px;
+        margin: 30px;
+      }
+    }
+    .blog-img {
+      padding-left: 20%;
+    }
+  }
+}

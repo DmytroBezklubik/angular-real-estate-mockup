@@ -1,0 +1,85 @@
+<app-rheader></app-rheader>
+<!-- BREADCRUMBS -->
+<div class="m-lg-0 mt-5" id="breadcrumbs">
+	<div class="container-fluid clearfix">
+		<a href="my-adverts">My
+			Adverts</a>
+		<a href="favorites">Favorites</a>
+		<a href="settings"
+		   style="text-decoration: underline; font-family: 'HKGrotesk-Bold', sans-serif;">Settings</a>
+	</div>
+</div>
+
+<!-- SETTINGS SECTION -->
+<section id="settings">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-2">
+				<div class="promote-it-toggle d-block">
+					<div class="settings-profile-pic">
+						<img class="img-fluid" alt="profile" src="../../../assets/images/person.png">
+						<button class="advanced-search-button promote-it-settings mt-3">change avatar</button>
+					</div>
+
+					<div class="paying-method mt-4">
+						<div class="container">
+							<p>Promowanie ogłoszenia: 0,25 zł / 7 dni</p>
+							<h3>Wybierz i zapłać za promowanie</h3>
+							<div class="row justify-content-center mt-3">
+								<div class="col-md-6">
+									<button class="dotpay my-3 m-md-0">
+										<img alt="dot-pay" src="../../../assets/images/dotpay.svg">
+									</button>
+								</div>
+								<div class="col-md-6">
+									<button class="paypal my-3 m-md-0">
+										<img alt="pay-pal" src="../../../assets/images/paypal.svg">
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 offset-lg-1">
+				<div class="edit-information">
+					<form>
+						<p>newsletter</p>
+						<div class="row">
+							<div class="col-md-6">
+								<label class="custom-radio-container">
+									<input id="removeFirst" class="test remove-pulse" type="radio" name="newsletter-on_off">
+									<span class="remove-pulse1"></span>
+									<span class="checkmark pulse">activate</span>
+								</label>
+							</div>
+							<div class="col-md-6">
+								<label class="custom-radio-container">
+									<input id="removeSecond" class="test" type="radio" name="newsletter-on_off">
+									<span class="checkmark">deactivate</span>
+								</label>
+							</div>
+						</div>
+						<p>Edit information</p>
+						<input aria-label="" placeholder="Company or name *" type="text">
+						<input aria-label="" placeholder="Telephone *" type="text">
+						<input aria-label="" placeholder="Adress" type="text">
+						<input aria-label="" placeholder="Adress" type="text">
+						<input aria-label="" placeholder="Post code" type="text">
+						<button class="advanced-search-button my-3">conform</button>
+					</form>
+				</div>
+			</div>
+			<div class="col-lg-3 offset-lg-1">
+				<div class="edit-information">
+					<p class="mt-5">New Password</p>
+					<input aria-label="" placeholder="Old password" type="text">
+					<input aria-label="" placeholder="New password" type="text">
+					<input aria-label="" placeholder="Confirm new password" type="text">
+					<button class="advanced-search-button my-3">conform</button>
+					<button class="advanced-search-button bg-sliver text-light">delete account</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

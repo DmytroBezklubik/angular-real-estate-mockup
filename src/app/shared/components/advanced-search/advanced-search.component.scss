@@ -1,0 +1,26 @@
+#advanced-search {
+
+    .pfrom, .pto {
+        .SumoSelect > .CaptionCont {
+          span {
+            color: transparent !important;
+          }
+        }
+      }
+      .pfrom-input, .pto-input {
+        position: absolute;
+        height: 40px;
+        background-color: transparent;
+        border: none;
+        color: #777;
+        z-index: 2;
+        padding-left: 10px;
+      }
+      .pto-input {
+        position: absolute;
+        height: 40px;
+        background-color: transparent;
+        border: none;
+        color: #777;
+      }
+}

@@ -1,0 +1,118 @@
+#mapview-header {
+    background-color: rgba(4, 30, 21, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-overflow-scrolling: touch;
+    .advanced-div {
+        height: 8rem;
+        background-color: rgba(4, 30, 21, .8);
+        width: 85%;
+        margin: 0 auto;
+        padding-top: 22px;
+        .mapview-logo {
+            font-size: 20px;
+            font-weight: bold;
+            width: 50px;
+        }
+        .distance {
+            // border-bottom: 1px solid #fff;
+            input {
+                width: 180px;
+                border: 0;
+                color: #fff;
+                background-color: transparent;
+                border-bottom: 1px solid #fff;
+            }
+            span {
+                margin-left: -50px;  
+            }
+        }
+        .mapview-search-btn {
+            color: #fff;
+        }
+    }
+    .map {
+        width: 85%;
+        margin: 0 auto;
+        .btns-group {
+            position: absolute;
+            position: absolute;
+            right: 10%;
+            margin-top: 20px;
+            .save-search-button {
+                display: inline-block;
+                button {
+                  border-radius: 4px;
+                  background-color: #00ce86;
+                  width: 100%;
+                  height: 2.6rem;
+                  color: #ffffff;
+                  text-transform: uppercase;
+                  font-size: .8rem;
+                  font-family: 'HKGrotesk-Medium', sans-serif;
+                  float: right;
+                  transition: box-shadow 200ms linear;
+                  .img-fluid {
+                    padding-left: 20px;
+                    padding-bottom: 4px;
+                  }
+                }
+                button:hover {
+                  box-shadow: 0 0 0.9rem 0 rgba(0, 0, 0, 0.75);
+                }
+            }
+            .map-button {
+                display: inline-block;
+                padding-left: 20px;
+                button {
+                  border-radius: 4px;
+                  background-color: #ff7b08;
+                  width: 100%;
+                  height: 2.6rem;
+                  color: #ffffff;
+                  text-transform: uppercase;
+                  font-size: .8rem;
+                  font-family: 'HKGrotesk-Medium', sans-serif;
+                  float: right;
+                  transition: box-shadow 200ms linear;
+                  .img-fluid {
+                    height: 20px;  
+                    padding-left: 20px;
+                    padding-bottom: 4px;
+                  }
+                }
+                button:hover {
+                  box-shadow: 0 0 0.9rem 0 rgba(0, 0, 0, 0.75);
+                }
+            }
+        }
+        .desktop-map {
+            display: block;
+        }
+    }
+}
+  
+  #mapview-header .advanced-div .nice-select .list {
+    height: 15rem;
+  }
+  
+  #mapview-header .advanced-div h6 {
+    margin-top: -1.67rem;
+    color: #fff;
+  }
+  
+  /* CUSTOM CHECKBOX */
+  
+  #mapview-header .advanced-div .advanced-div-checkbox {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+  }

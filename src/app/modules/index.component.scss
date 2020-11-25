@@ -1,0 +1,68 @@
+.root-wrapper {
+  background-color: #1e1e1e;
+
+  @media only screen and (max-width: 520px) {
+    background-color: #2e2e2e;
+  }
+  .page-wrapper {
+    display: flex;
+    // padding-top: 80px;
+    // padding-top: 65px;
+
+    @media only screen and (max-width: 1200px) {
+      padding-top: 65px;
+    }
+    @media only screen and (max-width: 900px) {
+      padding-top: 75px;
+    }
+
+    @media only screen and (max-width: 900px) {
+      flex-direction: column;
+    }
+
+    .page {
+      // width: calc(100% - 300px);
+      width: 100%;
+      display: inline-block;
+      background-color: #fff;
+    }
+
+    .mobile-extra-footer {
+      display: none;
+
+      .app-link {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 20px;
+        color: #ccc;
+        justify-content: space-between;
+        text-decoration: none;
+        align-items: center;
+
+        p {
+          flex: 0 0 55%;
+          margin: 0;
+        }
+
+        ada-image {
+          display: block;
+          flex: 0 0 45%;
+          height: 70px;
+        }
+      }
+
+      @media only screen and (max-width: 520px) {
+        display: block;
+      }
+    }
+  }
+
+  app-footer {
+    display: block;
+    // padding-top: 30px;
+
+    @media only screen and (max-width: 520px) {
+      padding-top: 0;
+    }
+  }
+}

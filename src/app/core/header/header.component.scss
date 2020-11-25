@@ -1,0 +1,188 @@
+/* NAV BAR */
+#nav-bar {
+  .navbar-z {
+    z-index: 3;
+    padding-top: 5px;
+    background-color: #142636;
+  }
+  
+  .navbar-search {
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    border-color: #a1a1a1;
+    color: #fff;
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+      border-color: #fff;
+    }
+  }
+  
+  .advanced-search {
+    font-size: 0.8rem;
+    color: #a1a1a1;
+    border: none;
+    background-color: transparent;
+    transition: color .2s linear;
+    &:hover {
+      color: #fff;
+    }
+    img {
+      width: 16px;
+    }
+  }
+  
+  .notification {
+    padding-right: 3rem !important;
+    margin-left: -2rem !important;
+
+    a {
+      position: relative;
+      display: inline-block;
+      .badge {
+        position: absolute;
+        top: 0px;
+        left: 10px;
+        padding: 1px 4px;
+        font-size: 12px;
+        height: 16px;
+        border-radius: 8px;
+        background-color: red;
+        color: white;
+      }
+      .badge-full {
+        top: 4px;
+        height: 10px;
+        width: 10px;
+      }
+    }
+  }
+
+  .logged-in {
+    width: 6.5rem;
+    height: 5rem;
+    background-color: #ffffff;
+    display: none;
+    position: absolute;
+    top: 38px;
+    right: -1.3px;
+    box-shadow: 0 0 0.37rem 0 rgba(0, 0, 0, 0.11);
+    padding: .25rem;
+  }
+  
+  .add-to-fave {
+    position: relative;
+    height: 40px;
+  }
+  
+  .add-to-fave:hover .logged-in {
+    display: block;
+  }
+  
+  .logged-in::after {
+    content: "";
+    position: absolute;
+    top: -9px;
+    right: 50%;
+    margin-left: 0;
+    border-width: .3rem;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    transform: rotate(180deg);
+    width: .75rem;
+  }
+  
+  .logged-in p {
+    font-size: .75rem;
+    color: #142636;
+    margin-bottom: .3rem;
+  }
+  
+  .logged-in button {
+    width: 5.8rem;
+    height: 1.5rem;
+    border-radius: 100px;
+    background-color: #00ce86;
+    font-size: .55rem;
+    text-align: center;
+    color: #142636;
+    font-family: 'HKGrotesk-Medium', sans-serif;
+    text-transform: uppercase;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .logged-in-dropdown .logged-in {
+    width: 9rem;
+    height: auto;
+    box-shadow: 0 0 0.37rem 0 rgba(0, 0, 0, 0.11);
+    right: 0;
+  }
+  
+  .logged-out .logged-in {
+    right: -50px;
+  }
+  
+  .logged-in-dropdown .login-button-drop {
+    width: 100%;
+    height: 1.5rem;
+    border-radius: 100px;
+    border: solid 1px #00ce86;
+    background-color: transparent;
+    font-size: .7rem;
+    letter-spacing: 0.03rem;
+    color: c;
+    font-family: 'HKGrotesk-Medium', sans-serif;
+    line-height: 1.1;
+  }
+  
+  .logged-in-dropdown .logged-in a {
+    font-size: .75rem;
+    letter-spacing: 0.03rem;
+    text-align: center;
+    color: #00ce86;
+    display: block;
+    margin: .9rem 0;
+  }
+  
+  .logged-in-dropdown .logged-in a:hover {
+    text-decoration: underline;
+  }
+  
+  .wrap-pulse {
+    position: relative;
+    width: 9.3rem;
+  }
+  
+  .bg-post-add {
+    animation: pulse 1.2s ease infinite;
+    background: #00ce86;
+    border-radius: 1.25rem;
+  }
+  
+  .bg-post-add, .pulse-post-add {
+    position: absolute;
+    width: 100%;
+    height: 2.5rem;
+  }
+  
+  .post-ad-navbar, .pulse-post-add {
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 100px;
+    background-color: #00ce86;
+    font-size: 0.7rem;
+    letter-spacing: 0.06rem;
+    color: #ffffff !important;
+    transition: box-shadow .2s linear;
+    font-family: 'HKGrotesk-Regular', sans-serif;
+  }
+  
+  .post-ad-navbar:hover {
+    box-shadow: 0 0 .9rem 0 rgba(0, 0, 0, 0.75);
+  }
+}
